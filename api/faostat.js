@@ -1,3 +1,7 @@
+export const config = {
+    runtime: "nodejs"
+};
+
 export default async function handler(req, res) {
     try {
         const url = "https://fenixservices.fao.org/faostat/api/v1/en/Trade_DetailedTradeMatrix/DF_TRADE_DTM?item_code=220&year=2022";

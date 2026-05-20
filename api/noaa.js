@@ -1,3 +1,7 @@
+export const config = {
+    runtime: "nodejs"
+};
+
 export default async function handler(req, res) {
     try {
         const url = "https://droughtmonitor.unl.edu/Ajax.aspx?type=dmjson";

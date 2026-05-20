@@ -1,3 +1,7 @@
+export const config = {
+    runtime: "nodejs"
+};
+
 export default async function handler(req, res) {
     try {
         const url = "https://www.ers.usda.gov/webdocs/DataFiles/80526/Monthly_Retail_Meat_Prices.json";
