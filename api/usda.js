@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     try {
-        const url = "https://mpr.datamart.ams.usda.gov/services/v1.1/reports/LM_XR";
+        const url = "https://mpr.datamart.ams.usda.gov/services/v1.1/summary";
         const response = await fetch(url);
         const data = await response.json();
 
