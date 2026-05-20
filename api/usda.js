@@ -1,11 +1,11 @@
 export default async function handler(req, res) {
     try {
-        const url = "https://www.ams.usda.gov/mnreports/lm_hmr.txt";
+        const url = "https://mpr.datamart.ams.usda.gov/services/v1.1/reports/LM_HMR";
         const response = await fetch(url);
-        const text = await response.text();
+        const data = await response.json();
 
         res.setHeader("Access-Control-Allow-Origin", "*");
-        res.status(200).json({ text });
+        res.status(200).json(data);
     } catch (err) {
         res.status(500).json({ error: "USDA fetch failed" });
     }
